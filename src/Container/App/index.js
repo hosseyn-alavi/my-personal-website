@@ -14,7 +14,7 @@ class App extends Component {
       xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
           data = JSON.parse(xhttp.responseText);
-          //this.setState({location:JSON.parse(xhttp.responseText)})
+          //this.setState({location:JSON.parse(xhttp.responseText)} )
         }
       };
       xhttp.open("GET", "http://ip-api.com/json/", false);
